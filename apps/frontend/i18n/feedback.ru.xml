@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="en" target-language="ru" datatype="plaintext">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>Feedback</source>
+        <target>Обратная связь</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Please read FAQ before asking your questions</source>
+        <target>Прежде чем задать свой вопрос, пожалуйста, посмотрите, нет ли ответа на него в разделе FAQ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>required fields</source>
+        <target>поля, обязательные для заполнения</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Name</source>
+        <target>Как вас зовут?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Email</source>
+        <target>Введите Ваш e-mail</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Message</source>
+        <target>Текст сообщения</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Enter verification code</source>
+        <target>Чтобы отправить сообщение, пожалуйста введите текст с картинки</target>
+      </trans-unit>
+      <trans-unit>
+        <source>submit</source>
+        <target>отправить сообщение</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Newsletter subscription</source>
+        <target>Подписка на рассылку Гаража</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Verification code</source>
+        <target>Введите код</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Subscribe</source>
+        <target>Подписаться</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Message sent</source>
+        <target>Ваше сообщение отправлено</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Subscribed</source>
+        <target>Вы подписаны на рассылку</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Buy tickets</source>
+        <target>Бронирование билетов</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Purchase form</source>
+        <target>Для бронирование билетов на мероприятие необходимо заполнить следующие поля</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Event title</source>
+        <target>Названия события</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Phone</source>
+        <target>Контактный телефон</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Date</source>
+        <target>Дата</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Submit</source>
+        <target>Отправить заявку на бронирование</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

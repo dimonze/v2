@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<script type="text/javascript" src="http://s1.kassa.rl0.ru/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://s1.kassa.rl0.ru/js/base64.js"></script>
+<script type="text/javascript" src="http://s2.kassa.rl0.ru/js/jquery.hashhistory.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(document).bind('hashChange', function(e, hash) {
+			if (hash) {
+				ticketManager = window.parent.parent.ticketManager;
+				var command = jQuery.parseJSON(Base64.decode(hash));
+				ticketManager.Execute(command);
+			}
+		});
+		if (location.hash) {
+			$(document).trigger('hashChange', location.hash);
+		}
+	});
+</script>
+</head>
+<body>
+</body>
+</html>

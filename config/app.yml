@@ -1,0 +1,18 @@
+all:
+  email:
+    from: no-reply@v2.garage.server.garin.su
+
+  feedback:
+    to: welcome@garageccc.com
+
+  job_request:
+    to: research@garageccc.com 
+
+  msg:
+    enabled: false
+    content_ru: '<p>Сегодня Гараж работает <b>до 18:00</b>. Будьте внимательны!<br><i>Очень внимательны!!</i><br><u>Сегодня не приходить!</u></p>'
+    content_en: '<p>Сегодня Гараж работает <b>до 18:00</b>. Будьте внимательны!<br><i>Очень внимательны!!</i><br><u>Сегодня не приходить!</u></p>'
+
+  .array:
+    accounts:
+      garage_press: { pass: garage_park2012, group: PRESS, fio: "Пресса" }

@@ -1,0 +1,58 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Book
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          book
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        title:          { label: Заголовок }
+        type:           { label: Тип }
+        gallery_id:     { label: Галерея }
+        on_banner:      { label: На баннере }
+        text_on_banner: { label: Отображать заголовок на баннере }
+        ru:             { label: На русском }
+        en:             { label: На английском }
+
+        preview_image:  { label: Изображение превью }
+        additional_image:  { label: Изображение доп. блока }
+        images:         { label: Изображения }
+        banner_image_ru: { label: RU Изображение для баннера }
+        banner_image_en: { label: EN Изображение для баннера }
+
+      list:
+        title:          Управление книгами
+        display:        [=book_name, author, publishing_house]
+        sort:           [id, desc]
+        max_per_page:   20
+        table_method:   retrieveBackendObjectList
+
+      filter:
+        display:        [book_name, author, publishing_house]
+
+      form:
+        display:
+          "Характеристики":
+            - gallery_id
+          "Описание":
+            - ru
+            - en
+          "Изображения":
+            - preview_image
+            - images
+            - banner_image_ru
+            - banner_image_en
+            - on_banner
+            - text_on_banner
+      edit:
+        title:          Редактирование книги "%%book_name%%"
+      new:
+        title:          Добавление книги

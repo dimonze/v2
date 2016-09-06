@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           News
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          news
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        title:          { label: Заголовок }
+        gallery_id:     { label: Галерея }
+        date:           { label: Дата, date_format: dd MMMM yyyy }
+        ru:             { label: На русском }
+        en:             { label: На английском }
+        preview_image:  { label: Изображение превью }
+
+      list:
+        title:          Управление новостями
+        display:        [date, =title]
+        sort:           [id, desc]
+        max_per_page:   20
+        table_method:   retrieveBackendObjectList
+
+      filter:
+        display:        [title, gallery_id, date]
+        
+      form:    ~
+      edit:
+        title:          Редактирование новости "%%title%%"
+      new:
+        title:          Добавление новости

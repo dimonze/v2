@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Центр современной культуры «Гараж»</title>
+  <link type="image/x-icon" href="/favicon.ico" rel="icon">
+  <link rel="stylesheet" type="text/css" media="screen" href="http://yandex.st/jquery/fancybox/2.0.5/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/global_styles.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/custom-theme/jquery-ui-1.8.21.custom.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
+  <script type="text/javascript" src="http://yandex.st/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBz4fZob_2Quq5H9feB6HYwlGX52aqUrrQ&sensor=false"></script> <!--new scripts-->
+  <script type="text/javascript" src="http://yandex.st/jquery/fancybox/2.0.5/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="..//js/jquery-ui-1.8.21.custom.min.js"></script>
+  <script type="text/javascript" src="../js/garrage.js"></script>
+  <script type="text/javascript" src="../js/map.js"></script> <!--new scripts-->
+
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="/reject/jquery.reject.css" /><![endif]-->
+  <!--[if lt IE 9]>
+  <script src="../js/html5forIE.js" type="text/javascript"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  
+  <header>
+    <div class="row-fluid">
+      
+      <!--another logo-->
+      <div class="span4 logo"><!--span4-->
+        <a href="/"><img alt="" src="../images/logo.png"></a>
+      </div>
+      <!--/another logo-->
+
+      <div class="span8"><!--span8-->
+        <nav class="mainNav row">
+          <ul class="nav">
+            <li>
+              <div>
+                <form action="/ru/search" class="search-query">
+                  <input name="query" placeholder="Поиск по сайту" type="text"> <input type="submit" value="">
+                </form>
+              </div>
+            </li>
+            <li>
+              <a class="navIco nav-map" href="/ru/page/visit"></a>
+              <address>
+                +7 (495) <strong>645-05-20</strong>
+              </address>
+            </li>
+            <li><a class="socIco nav-fb" href="http://www.facebook.com/garageccc?ref=nf" target="_blank"></a></li>
+            <li><a class="socIco nav-tw" href="http://twitter.com/garage_art/" target="_blank"></a></li>
+            <li><a class="socIco nav-ig" href="http://instagram.com/garageccc" target="_blank"></a></li>
+            <li><a class="socIco nav-vk" href="http://vk.com/garageccc" target="_blank"></a></li>
+            <li><a class="socIco nav-youtube" href="http://www.youtube.com/garageccc" target="_blank"></a></li>
+            <li><a class="socIco nav-ls" href="http://new.livestream.com/garageccclive" target="_blank"></a></li>
+            <li>
+              <ul class="menu fl lang">
+                <li><span>Рус</span></li>
+                <li>/</li>
+                <li><a href="/en">Eng</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        
+        <!--partner's logos have moved to the bottom>
+        <div class="span6 sponsors__cont right headerRight">
+          <ul class="menu fr sponsors">
+            <li class="sponsors__item"><a href="http://www.mastercard.com/ru" target="_blank"><img alt="" src="http://garageccc.com/uploads/logos/master_ru.jpg"></a></li>
+            <li class="sponsors__item"><a href="http://www.audi.ru/" target="_blank"><img alt="" src="http://garageccc.com/uploads/logos/sponsor_audi.jpg"></a></li>
+          </ul>
+        </div>
+        </ to the bottom-->
+
+      </div>
+
+      <div class="headBottomNav linksBlack clearfix">
+        <nav class="fl">
+          <ul class="menu">
+            <li class="purpur">
+              <a href="/ru/event/category/atype/1"><strong>Выставки</strong></a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/event/category/type/1/date/now">Выставки</a> /</li>
+                <li><a class="" href="/ru/event/category/type/3/date/now">Garage Project Space</a> /</li>
+                <li><a class="" href="/ru/event/category/type/2/date/now">Внешние проекты</a> /</li>
+                <li><a class="" href="/ru/event/category/atype/1/date/archive">Было</a></li>
+              </ul>
+            </li>
+            <li class="orange">
+              <a href="/ru/event/category/atype/10"><strong>Дети</strong></a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/event/category/type/10/date/now">События</a> /</li>
+                <li><a class="" href="/ru/event/category/type/11/date/now">Курсы</a> /</li>
+                <li><a class="" href="/ru/event/category/atype/10/date/archive">Было</a></li>
+              </ul>
+            </li>
+            <li class="blue">
+              <a href="/ru/event/category/atype/20"><strong>Образование</strong></a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/event/category/type/20/date/now">Лекции</a> /</li>
+                <li><a class="" href="/ru/event/category/type/21/date/now">Курсы</a> /</li>
+                <li><a class="" href="/ru/event/category/type/22/date/now">Кино</a> /</li>
+                <li><a class="" href="/ru/event/category/type/23/date/now">Музыка</a> /</li>
+                <li><a class="" href="/ru/book/index">Книги</a> /</li>
+                <li><a class="" href="/ru/event/category/atype/20/date/archive">Было</a></li>
+              </ul>
+            </li>
+            <li class="grass">
+              <a href="/ru/page/research"><strong>Научная деятельность</strong></a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/event/category/type/31/date/now">Исследования</a> /</li>
+                <li><a class="grass" href="/ru/page/archive">Архив</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="fr">
+          <ul class="menu">
+            <li class="no_active">
+              <div class="menu hidden unstyled"></div>
+            </li>
+            <li class="">
+              <a href="/ru/page/about">О Гараже</a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/news/index">Новости</a> /</li>
+                <li><a class="" href="/ru/page/buildings">История</a> /</li>
+                <li><a class="" href="/ru/gallery/index">Фотогалереи</a> /</li>
+                <li><a class="" href="/ru/page/partners">Партнеры</a> /</li>
+                <li><a class="" href="/ru/page/contact-us">Контакты</a> /</li>
+                <li><a class="" href="/ru/page/jobs-at-garage">Вакансии</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/ru/page/press">Пресса</a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/page/join-press-list">Присоединиться к пресс-листу</a> /</li>
+                <li><a class="" href="/ru/page/press-contacts">Контакты</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/ru/page/visit">Посетителям</a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/page/contacts">Как нас найти</a> /</li>
+                <li><a class="" href="/ru/page/cafe">Кафе</a> /</li>
+                <li><a class="" href="/ru/page/bookshop">Книжный магазин «Гараж»</a> /</li>
+                <li><a class="" href="/ru/page/summer-pavilion">Летний павильон</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/ru/page/art-friendship">ARTДРУГ</a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/page/about-art-friendship">О программе</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/ru/page/support">Поддержка</a>
+              <ul class="hidden menu unstyled">
+                <li><a class="" href="/ru/page/iris-foundation">Фонд «Айрис»</a> /</li>
+                <li><a class="" href="/ru/page/cooperation">Сотрудничество</a> /</li>
+                <li><a class="" href="/ru/page/artists-support">Поддержка молодых российских художников</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="content">
+    <section class="eventGallery slider sliderCircle timed">
+      <a class="arr arrL" href="javascript:void(0)"></a> <a class="arr arrR" href="javascript:void(0)"></a>
+      <div class="pagination">
+        <ul>
+          <li>1</li>
+        </ul>
+      </div>
+      <ul class="center sliderList">
+        <li data-item="1"><a class="linkToEvnt" href="/ru/event/459"></a> <img src="http://garageccc.com/uploads/event_banner_ru/r/c/459.jpg?1396868155"></li>
+      </ul>
+    </section>
+
+    <!-- no filters
+    <div class="navTwoCols row-fluid">
+      <nav class="left">
+        <ul class="menu">
+          <li>
+            <h3>Сейчас в Гараже</h3>
+          </li>
+        </ul>
+      </nav>
+      <nav class="fr">
+        <ul class="menu">
+          <li><strong>Показать</strong></li>
+          <li><a class="fs14 strong wiolet" href="/ru/event/category/atype/1">Выставки</a> /</li>
+          <li><a class="fs14 strong orange" href="/ru/event/category/atype/10">Дети</a> /</li>
+          <li><a class="fs14 strong biruza" href="/ru/event/category/atype/20">Образование</a> /</li>
+          <li><a class="fs14 strong grass" href="/ru/event/category/atype/30">Научная деятельность</a></li>
+        </ul>
+      </nav>
+    </div>
+    -->
+
+    <section class="row-fluid mainPageEvents">
+      <div class="span4">
+
+        <!--new col goes here-->
+        
+        <h2 class="col__h2">Visit</h2>
+
+        <div class="v-box">
+          <div class="v-box__map">
+            <div class="gmap" id="gmap"></div>
+          </div>
+          <div class="v-box__text">
+            <p>Garage is located at Pioneer pond in Gorky Park.</p>
+            <p>Phone: +7 (495) 645-05-20</p>
+            <p>E-mail: <a href="#">welcome@garageccc.com</a></p>
+            <p><a class="uppercase" href="#">Location and directions</a></p>
+          </div>
+        </div>
+        <div class="v-box">
+          <h3 class="v-box__h">About</h3>
+          <div class="v-box__text">
+            <p>Garage Museum of Contemporary Art is the place for people, art and ideas to create history.</p>
+            <p><a class="uppercase" href="#">Read more about Garage</a></p>
+          </div>
+        </div>
+        <div class="v-box">
+          <h3 class="v-box__h">Hours and tickets</h3>
+          <div class="row-fluid">
+            <div class="span6">
+              <div class="v-box__schedule">
+                <div class="v-box__day">Sun – Thu:</div>
+                <div class="v-box__time">11:00 – 22:00</div>
+              </div>
+            </div>
+            <div class="span6">
+              <div class="v-box__schedule">
+                <div class="v-box__day">Fri – Sat:</div>
+                <div class="v-box__time">11:00 – 23:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="v-box__text">
+            <p>Tickets are available at the ticket desk of Garage Pavilion in Gorky Park.</p>
+            <p>All lectures, concerts and open workshops for kids are free.</p>
+          </div>
+        </div>
+        <div class="ni__box">
+          <h2 class="col__h2">News</h2>
+          <div class="ni">
+            <div class="ni__date">17.02.14</div>
+            <h3 class="ni__h">REGISTRATION NOW OPEN FOR THE REFLEXIVE MUSEUM CONFERENCE: RESPONSIVE SPACE FOR PUBLICS, IDEAS, AND ART</h3>
+            <div class="ni__text">Registration now open: the Reflexive museum conference, Garage Center for Contemporary Culture, Moscow 20th-21st March 2014</div>
+          </div>
+          <div class="ni">
+            <div class="ni__date">17.02.14</div>
+            <h3 class="ni__h">GARAGE. ART MECHANICS: NEW PROGRAM BY ANTON BELOV ON RADIO CULTURE</h3>
+            <div class="ni__text">Anton Belov hosts a new series of programs about art on Radio Culture.</div>
+          </div>
+          <div class="ni">
+            <div class="ni__date">17.02.14</div>
+            <h3 class="ni__h">ENTRANCE EXAMINATIONS TO CAMPUS FOR THE 2014 ACADEMIC YEAR</h3>
+            <div class="ni__text">On December 1st Masterskaya® and Yandex will hold at GARAGE Center for contemporary culture Entrance exam for the 2014 academic year to Campus - project platform for designers.</div>
+          </div>
+          <div class="ni">
+            <div class="ni__date">17.02.14</div>
+            <h3 class="ni__h">OPEN CALL FOR YOUNG RUSSIAN CURATORS: RESULTS</h3>
+            <div class="ni__text">Garage Center for Contemporary Culture is pleased to announce the nominees from its open call for emerging curators.</div>
+          </div>
+          <div class="ni">
+            <div class="ni__date">17.02.14</div>
+            <h3 class="ni__h">ENTRANCE EXAMINATIONS TO CAMPUS FOR THE 2014 ACADEMIC YEAR</h3>
+            <div class="ni__text">On December 1st Masterskaya® and Yandex will hold at GARAGE Center for contemporary culture Entrance exam for the 2014 academic year to Campus - project platform for designers.</div>
+          </div>
+        </div>
+        <div class="more-box more-box_news">
+          <a href="#" class="uppercase">More news</a>
+        </div>
+      </div>
+      <div class="span4">
+        
+        <h2 class="col__h2">On view</h2> <!--new header-->
+
+        <ul class="eventsList">
+          <li>
+            <div class="row-fluid orangeBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="orange">Дети</h6>
+                  <h4><a href="/ru/event/433">АРТ-ТЕРАПИЯ ДЛЯ СЛАБОВИДЯЩИХ</a></h4>
+                  <div class="box__subtitle uppercase">The term “art therapy” stands for any therapeutic use of the creative art-making.</div> <!--new field can be uppercased-->
+                  <div class="box__price">490 rub.</div> <!--new field-->
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/433"><img src="http://garageccc.com/uploads/event_preview_thumb2/1/c/433.jpg?1390841500"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid blueBox">
+              <div class="evntTxtWrp">
+                <h6 class="biruza">лекция</h6>
+                <h4><a href="/ru/event/460">«Прогулки с «Гаражом»: серия экскурсий по памятникам архитектуры 1920-х годов</a></h4>
+                <div class="box__subtitle">The term “art therapy” stands for any therapeutic use of the creative art-making.</div> <!--new field-->
+                <div class="box__price">15 000 rub.</div> <!--new field-->
+              </div><a class="imgEvent" href="/ru/event/460"><img src="http://garageccc.com/uploads/event_preview_thumb1/s/c/460.jpg?1397053940"><div class="triangle triangle-down"></div></a>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid orangeBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="orange">Дети</h6>
+                  <h4><a href="/ru/event/433">АРТ-ТЕРАПИЯ ДЛЯ СЛАБОВИДЯЩИХ</a></h4><time class="uppercase">25.02.14 / 29.04.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/433"><img src="http://garageccc.com/uploads/event_preview_thumb2/1/c/433.jpg?1390841500"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid orangeBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="orange">Дети</h6>
+                  <h4><a href="/ru/event/433">АРТ-ТЕРАПИЯ ДЛЯ СЛАБОВИДЯЩИХ</a></h4><time class="uppercase">25.02.14 / 29.04.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/433"><img src="http://garageccc.com/uploads/event_preview_thumb2/1/c/433.jpg?1390841500"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid orangeBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="orange">Дети</h6>
+                  <h4><a href="/ru/event/433">АРТ-ТЕРАПИЯ ДЛЯ СЛАБОВИДЯЩИХ</a></h4><time class="uppercase">25.02.14 / 29.04.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/433"><img src="http://garageccc.com/uploads/event_preview_thumb2/1/c/433.jpg?1390841500"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid orangeBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="orange">Дети</h6>
+                  <h4><a href="/ru/event/433">АРТ-ТЕРАПИЯ ДЛЯ СЛАБОВИДЯЩИХ</a></h4><time class="uppercase">25.02.14 / 29.04.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/433"><img src="http://garageccc.com/uploads/event_preview_thumb2/1/c/433.jpg?1390841500"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="more-box more-box">
+          <a href="#" class="uppercase">All events</a>
+        </div>
+      </div>
+      <div class="span4">
+        
+        <h2 class="col__h2">Garage recommends</h2> <!--new header-->
+
+        <ul class="eventsList">
+          <li>
+            <div class="row-fluid purpurBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="wiolet">project space</h6>
+                  <h4><a href="/ru/event/461">«ТЕНЬ СОМНЕНИЯ»</a></h4><time class="uppercase">11.04.14 / 02.05.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/461"><img src="http://garageccc.com/uploads/event_preview_thumb2/t/c/461.png?1397055327"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid blueBox">
+              <div class="evntTxtWrp">
+                <h6 class="biruza">лекция</h6>
+                <h4><a href="/ru/event/460">«Прогулки с «Гаражом»: серия экскурсий по памятникам архитектуры 1920-х годов</a></h4><time class="uppercase">11.04.14 / 13.09.14</time>
+              </div><a class="imgEvent" href="/ru/event/460"><img src="http://garageccc.com/uploads/event_preview_thumb1/s/c/460.jpg?1397053940"><div class="triangle triangle-down"></div></a>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid purpurBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="wiolet">project space</h6>
+                  <h4><a href="/ru/event/462">Победители конкурса для молодых кураторов</a></h4><time class="uppercase">09.04.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/462"><img src="http://garageccc.com/uploads/event_preview_thumb2/u/c/462.jpg?1397059910"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid blueBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="biruza">лекция</h6>
+                  <h4><a href="/ru/event/466">ICI проведет интенсив по кураторству в Москве</a></h4><time class="uppercase">03.08.14 / 09.08.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/466"><img src="http://garageccc.com/uploads/event_preview_thumb2/y/c/466.jpg?1397555712"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid purpurBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="wiolet">project space</h6>
+                  <h4><a href="/ru/event/462">Победители конкурса для молодых кураторов</a></h4><time class="uppercase">09.04.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/462"><img src="http://garageccc.com/uploads/event_preview_thumb2/u/c/462.jpg?1397059910"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row-fluid blueBox">
+              <div class="span6">
+                <div class="evntTxtWrp">
+                  <h6 class="biruza">лекция</h6>
+                  <h4><a href="/ru/event/466">ICI проведет интенсив по кураторству в Москве</a></h4><time class="uppercase">03.08.14 / 09.08.14</time>
+                </div>
+              </div>
+              <div class="span6">
+                <a class="imgEvent" href="/ru/event/466"><img src="http://garageccc.com/uploads/event_preview_thumb2/y/c/466.jpg?1397555712"><div class="triangle triangle-right"></div></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- no news here anymore
+
+      <section class="slider arrowsOutsude newsBlock">
+        <h3><a href="/ru/news/index">Новости</a></h3>
+        <div class="slider">
+          <a class="arr arrL hidden disabled" href="javascript:void(0)"></a> <a class="arr arrR hidden disabled" href="javascript:void(0)"></a>
+          <ul class="sliderList">
+            <li class="active row-fluid">
+              <div class="span3">
+                <time class="dark">25.03.14</time>
+                <h4><a href="/ru/news/46">Первые итоги Конкурса для молодых кураторов</a></h4>
+                <p>Центр современной культуры «Гараж» объявляет итоги голосования экспертного совета и называет номинантов премии Конкурса для молодых кураторов.</p>
+              </div>
+              <div class="span3">
+                <time class="dark">17.02.14</time>
+                <h4><a href="/ru/news/45">ОТКРЫТА РЕГИСТРАЦИЯ НА КОНФЕРЕНЦИЮ «РЕШИТЕЛЬНЫЙ МУЗЕЙ»</a></h4>
+                <p>Центр современной культуры «Гараж» открывает регистрацию на конференцию «Решительный музей», которая состоится 20–21 марта 2014 года и будет посвящена вопросам возникновения и функционирования новых форм культурных институций.</p>
+              </div>
+              <div class="span3">
+                <time class="dark">29.11.13</time>
+                <h4><a href="/ru/news/44">Передача Антона Белова «Гараж. Арт-механика» на радио «Культура»</a></h4>
+                <p>Каждую пятницу в 17:35 на радио «Культура» со своими гостями беседует директор Центра современной культуры «Гараж» Антон Белов – автор и ведущий программы «Гараж. Арт-механика».</p>
+              </div>
+              <div class="span3">
+                <time class="dark">28.11.13</time>
+                <h4><a href="/ru/news/42">Экзамен в Кампус на 2014 учебный год</a></h4>
+                <p>1 декабря Мастерская® и Яндекс проведут в Центре современной культуры «Гараж» вступительный экзамен на 2014 учебный год в Кампус - проектную площадку для дизайнеров.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    -->
+    <section class="newsBlockImage borderTopLight">
+      <div class="row-fluid">
+        <div class="span3">
+          <a href="http://garageccc.com/ru/page/cafe"><img alt="Кафе Центра современной культуры «Гараж»" src="http://garageccc.com/uploads/promos/fec3cd145ca93012f739dd578bbe0ba459b4b397.png"></a>
+          <h4>Кафе Центра современной культуры «Гараж»</h4>
+          <p><a href="http://garageccc.com/ru/page/cafe">Подробнее</a></p>
+        </div>
+        <div class="span3">
+          <a href="http://garageccc.com/ru/page/visit"><img alt="«Гараж» в Парке Горького" src="http://garageccc.com/uploads/promos/a523346067c627e0325ba05c1a33300120db378d.png"></a>
+          <h4>«Гараж» в Парке Горького</h4>
+          <p><a href="http://garageccc.com/ru/page/visit">Как нас найти</a></p>
+        </div>
+        <div class="span3">
+          <a href="http://garageccc.com/ru/page/bookshop"><img alt="Книжный магазин Garage Art Bookshop" src="http://garageccc.com/uploads/promos/b3acc4f4d11145fa84573d1b7a80a198944b046e.png"></a>
+          <h4>Книжный магазин Garage Art Bookshop</h4>
+          <p><a href="http://garageccc.com/ru/page/bookshop">Подробнее</a></p>
+        </div>
+        <div class="span3">
+          <a href="/ru/news/artguide"><img alt="Новости искусства от artguide.ru" src="http://garageccc.com/uploads/promos/6fe9dff2a43af1fbd2477f5df5b7b6d6d422b910.png"></a>
+          <h4>Новости искусства от artguide.ru</h4>
+          <p><a href="/ru/news/artguide">Читать ленту</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- yeah, logos are here now -->
+    <div class="row-fluid partners">
+      <div class="span9">
+        <div class="span6 sponsors__cont right headerRight">
+          <ul class="menu fr sponsors">
+            <li class="sponsors__item"><a href="http://www.mastercard.com/ru" target="_blank"><img alt="" src="http://garageccc.com/uploads/logos/master_ru.jpg"></a></li>
+            <li class="sponsors__item"><a href="http://www.audi.ru/" target="_blank"><img alt="" src="http://garageccc.com/uploads/logos/sponsor_audi.jpg"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="span3 inf-partn__box">
+        <div class="inf-partn">
+          <p class="inf-partn__text">Информационный партнер</p><a href="http://interviewrussia.ru/"><img class="inf-partn__img" src="http://garageccc.com/images/interview-sm.png"></a>
+        </div>
+      </div>
+    </div>
+    <!-- yeah, logos are here now -->
+
+  </div>
+
+  <footer class="row-fluid">
+    <div class="span9">
+      <p><strong>© Центр современной культуры «Гараж»</strong> 2014.</p>
+      <ul class="menu linksBlack uppercase">
+        <li><a href="/ru/event/category/atype/1">Выставки</a> ⁄</li>
+        <li><a href="/ru/event/category/atype/10">Дети</a> ⁄</li>
+        <li><a href="/ru/event/category/atype/20">Образование</a> ⁄</li>
+        <li><a href="/ru/page/about">О Гараже</a> ⁄</li>
+        <li><a href="/ru/page/press">Пресса</a> ⁄</li>
+        <li><a href="/ru/page/visit">Посетителям</a> ⁄</li>
+        <li><a href="/ru/page/art-friendship">ARTДРУГ</a> ⁄</li>
+        <li><a href="/ru/page/support">Поддержка</a> ⁄</li>
+        <li><a href="/ru/page/research">Научная деятельность</a> ⁄</li>
+      </ul>
+      <ul class="menu listMargR">
+        <li><a href="/ru/page/contacts">Контактная информация</a></li>
+        <li><a class="openPopUp" href="#" rel="feedback">Обратная связь</a></li>
+        <li><a href="/ru/page/jobs-at-garage">Вакансии</a></li>
+        <li><a href="mailto:welcome@garageccc.com">welcome@garageccc.com</a></li>
+      </ul>
+      <p><a href="http://park-gorkogo.com/" target="_blank">Парк Горького</a> <span class="grey developed">Изобретено в <a href="http://www.garin-studio.ru/" onclick="window.open(this.href);return false;">Garin-Studio</a></span></p>
+    </div>
+    <div class="span3 developed formFooter">
+      <div>
+        <h5 class="uppercase">Подписка на рассылку Гаража</h5>
+        <form action="/ru/feedback/subscribe" class="greyForm feedbackForm" method="post">
+          <div class="triangle-up"></div><input id="subscriber_email" name="subscriber[email]" placeholder="Введите Ваш e-mail" type="text">
+          <div class="captcha"><input autocomplete="off" id="subscriber_captcha" name="subscriber[captcha]" placeholder="Введите код" type="text"><img class="fr" id="subscriber_captcha_kcaptcha" onclick="this.src='/kcaptcha.png?form_name=subscriber&amp;'+(new Date).getTime();" src="/kcaptcha.png?1398244814.2378&amp;form_name=subscriber"></div><input class="submitMail" type="submit" value="Подписаться">
+        </form>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="en" target-language="ru" datatype="plaintext">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>The application for a job at the library and archives of Garage culture centre</source>
+        <target>Заявка на работу в библиотеке и архиве гаража</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Full Name</source>
+        <target>ФИО</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Address</source>
+        <target>Адрес</target>
+      </trans-unit>
+      <trans-unit>
+        <source>E-mail</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Phone</source>
+        <target>Телефон</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Profession</source>
+        <target>Профессия</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Company</source>
+        <target>Организация</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Theme of research</source>
+        <target>Тема исследования</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Purpose of research</source>
+        <target>Цель исследования</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Captcha</source>
+        <target>Код с картинки</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>For specialists working with modern art, students and aspirants of humanity universities.</source>
+        <target>Для специалистов, занимающихся современным изобразительным искусством, студентов и аспирантов гуманитарных ВУЗов.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>After receiving application, we will contact you within the next 7 days.</source>
+        <target>После получения заявки мы свяжемся с вами в течение 7 дней</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Submit</source>
+        <target>Отправить заявку</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>number in international format</source>
+        <target>в международном формате</target>
+      </trans-unit>
+      <trans-unit>
+        <source>dissertation, diploma, article, work on the exhibition, etc.</source>
+        <target>диссертация, дипломная работа, статья, работа над выставкой и т.д.</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>All fields are %error%.</source>
+        <target>Все поля %error%.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Field %field% is %error%.</source>
+        <target>Поле %field% %error%.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Fields %fields% are %error%.</source>
+        <target>Поля %fields% - значение %error%.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>required</source>
+        <target>обязательны для заполнения</target>
+      </trans-unit>
+      <trans-unit>
+        <source>invalid</source>
+        <target>некорректное</target>
+      </trans-unit>
+      <trans-unit>
+        <source>too long</source>
+        <target>слишком длинное</target>
+      </trans-unit>
+      <trans-unit>
+        <source>too short</source>
+        <target>слишком короткое</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

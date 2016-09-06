@@ -1,0 +1,47 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Page
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          page
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        title:          { label: Наименование }
+        slug:           { label: URL }
+        parent_id:      { label: Родительская страница }
+        ru:             { label: На русском }
+        en:             { label: На английском }
+        images:         { label: Изображения }
+
+      list:
+        title:          Управление страницами
+        display:        [=title, slug]
+        layout:         stacked
+        params:         %%indent%% %%title%% (%%slug%%)
+        table_method:   retrieveBackendPageList
+        max_per_page:   30
+        sort:           [lft, asc]
+        object_actions:
+          promote:      { label: Выше, action: promote }
+          demote:       { label: Ниже, action: demote }
+          _edit: ~
+          _delete: ~
+        batch_actions:  {}
+
+      filter:
+        class:          false
+      form:
+        display: [parent_id, ru, en, slug, images]
+
+      edit:
+        title:          Редактирование страницы "%%title%%"
+      new:
+        title:          Добавление страницы

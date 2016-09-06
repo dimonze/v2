@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Video
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          video
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+       _new:           { credentials: noone }
+       _delete:        { credentials: noone }
+      fields: 
+        on_homepage:    { label: Выводить на главной }
+      list:
+        title:          Видео на главной
+        display:        [=title, on_homepage]
+      filter:
+        class: false 
+        

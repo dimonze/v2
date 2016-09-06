@@ -1,0 +1,1 @@
+<p><?= __('Subscribed', '', 'feedback') ?>!</p>

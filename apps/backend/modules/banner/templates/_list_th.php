@@ -1,0 +1,1 @@
+<th class="sf_admin_text sf_admin_list_th_title">Наименование</th>

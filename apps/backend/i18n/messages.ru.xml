@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2008-12-24T18:32:11Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>Exhibitions</source>
+        <target>Выставки</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Education</source>
+        <target>Образование</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Kids</source>
+        <target>Дети</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Research</source>
+        <target>Научная деятельность</target>
+      </trans-unit>
+	  <trans-unit>
+        <source>Author</source>
+        <target>Автор</target>
+      </trans-unit>
+		<trans-unit>
+        <source>Publication date</source>
+        <target>Дата издания</target>
+      </trans-unit>	
+      <trans-unit>
+        <source>Book name</source>
+        <target>Название книги</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publishing house</source>
+        <target>Издательство</target>
+      </trans-unit>
+	  
+    </body>
+  </file>
+</xliff>

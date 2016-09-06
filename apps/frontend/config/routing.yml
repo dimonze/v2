@@ -1,0 +1,55 @@
+homepage:
+  url:          /:sf_culture
+  param:        { module: page, action: index, sf_culture: ru  }
+  requirements: { sf_culture: 'ru|en' }
+
+
+event_show:
+  url:          /:sf_culture/event/:id
+  class:        sfDoctrineRoute
+  options:      { model: Event, type: object, method: getObjectItem }
+  param:        { module: event, action: show }
+  requirements: { sf_culture: 'ru|en', id: \d+ }
+  
+book_show:
+  url:          /:sf_culture/book/:id
+  class:        sfDoctrineRoute
+  options:      { model: Book, type: object, method: getObjectItem }
+  param:        { module: book, action: show }
+  requirements: { sf_culture: 'ru|en', id: \d+ }
+
+news_show:
+  url:          /:sf_culture/news/:id
+  class:        sfDoctrineRoute
+  options:      { model: News, type: object, method: getObjectItem }
+  param:        { module: news, action: show }
+  requirements: { sf_culture: 'ru|en', id: \d+ }
+
+page_show:
+  url:          /:sf_culture/page/:slug
+  class:        sfDoctrineRoute
+  options:      { model: Page, type: object, method: getObjectItem }
+  param:        { module: page, action: show }
+  requirements: { sf_culture: 'ru|en' }
+
+gallery_show:
+  url:          /:sf_culture/gallery/:id
+  class:        sfDoctrineRoute
+  options:      { model: Gallery, type: object, method: getObjectItem }
+  param:        { module: gallery, action: show }
+  requirements: { sf_culture: 'ru|en', id: \d+ }
+
+kcaptcha:
+  url:          /kcaptcha.png
+  params:       { module: kcaptcha, action: index }
+
+search:
+  url:          /:sf_culture/search
+  params:       { module: page, action: search }
+  requirements: { sf_culture: 'ru|en' }
+
+
+default:
+  url:          /:sf_culture/:module/:action/*
+  param:        { action: index }
+  requirements: { sf_culture: 'ru|en' }

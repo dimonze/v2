@@ -1,0 +1,11 @@
+_banners:
+  enabled:      true
+  lifetime:     13
+
+_logos:
+  enabled:      true
+  lifetime:     47
+
+_navFooter:
+  enabled:      true
+  lifetime:     3600

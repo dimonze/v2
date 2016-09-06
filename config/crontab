@@ -1,0 +1,1 @@
+* * * * * ./symfony project:send-emails --application=backend --env=prod --time-limit=40 > /dev/null

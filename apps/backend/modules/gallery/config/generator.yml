@@ -1,0 +1,46 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Gallery
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gallery
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        title:          { label: Заголовок }
+        date:           { label: Дата, date_format: dd MMMM yyyy }
+        ru:             { label: На русском }
+        en:             { label: На английском }
+        preview_image:  { label: Изображение превью }
+        ImagesNew:      { label: Изображения }
+
+      list:
+        title:          Управление галереями
+        display:        [=title, date]
+        sort:           [date, desc]
+        max_per_page:   20
+        table_method:   retrieveBackendObjectList
+
+      filter:
+        display:        [title, date]
+
+      form:
+        display:
+          - date
+          - ru
+          - en
+          - preview_image
+          - ImagesNew
+          - _images
+
+      edit:
+        title:          Редактирование галереи "%%title%%"
+      new:
+        title:          Добавление галереи

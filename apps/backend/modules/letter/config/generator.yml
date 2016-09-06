@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Letter
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          letter
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        lang:           { label: Язык письма }
+        image:          { label: Изображение }
+        subject:        { label: Тема письма }
+        body:           { label: Текст письма }
+        events:         { label: Прикрепленные события }
+        created_at:     { label: Дата создания, date_format: dd MMMM yyyy }
+        updated_at:     { label: Дата обновления, date_format: dd MMMM yyyy }
+      list:
+        title:          Письма для рассылки
+        display:        [=subject, created_at, updated_at]
+        sort:           [id, desc]
+        max_per_page:   30
+        object_actions:
+          _edit: ~
+          _delete: ~
+          _show:        { label: Просмотр, action: show }
+          _source:      { label: Код, action: source }
+      filter:
+        display:        [subject, created_at, updated_at]
+      form:
+        display:
+          Язык:         [lang]
+          Основное:     [subject, image, body]
+          События:      [_events]
+      edit:
+        title:          Конструктор письма
+      new:
+        title:          Конструктор письма

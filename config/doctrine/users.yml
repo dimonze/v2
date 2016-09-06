@@ -1,0 +1,38 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+
+User:
+  actAs:
+    Timestampable:
+      updated:
+        disabled: true
+
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    group:
+      type: enum
+      values: [PRESS, MEMBER]
+      notnull: true
+    fio:
+      type: string(150)
+      notnull: true
+    email:
+      type: string(50)
+      email: { check_mx: false }
+      notnull: true
+      unique: true
+    password:
+      type: string(40)
+      fixed: true
+      notnull: true
+    token:
+      type: string(16)
+      fixed: true

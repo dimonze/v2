@@ -1,0 +1,68 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Book:
+  actAs:
+    I18n:
+      fields: [book_name, author, description, publishing_house, about_book, about_author, about_publishing, publication_date, price]
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+
+    on_banner:
+      type: boolean
+      notnull: true
+      default: false
+    text_on_banner:
+      type: boolean
+      notnull: true
+      default: true
+
+    gallery_id:
+      type: integer(4)
+      unsigned: true
+
+    book_name:
+      type: string(255)
+      notnull: true
+    author: string(255)
+    description: string
+    publishing_house: string
+    about_book: string
+    about_author: string
+    about_publishing: string
+    publication_date: string(150)
+    price: string(255)
+
+  relations:
+    Gallery:
+      type: one
+      foreignType: one
+      onDelete: set null
+
+
+BookImage:
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    book_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+
+  relations:
+    Book:
+      type: one
+      foreignType: many
+      foreignAlias: Images
+      onDelete: cascade

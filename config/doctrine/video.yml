@@ -1,0 +1,22 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Video:
+  actAs:
+    I18n:
+      fields: [title]
+
+  columns:
+    title:
+      type: string(255)
+      notnull: true
+      
+    video_url: string
+    
+    on_homepage:
+      type: boolean
+      default: false
+      notnull: true

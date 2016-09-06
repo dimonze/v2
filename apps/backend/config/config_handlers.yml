@@ -1,0 +1,11 @@
+config/banners.yml:
+  class: sfDefineEnvironmentConfigHandler
+  param:
+    prefix: banner_
+    module: false
+
+config/logos.yml:
+  class: sfDefineEnvironmentConfigHandler
+  param:
+    prefix: logo_
+    module: false

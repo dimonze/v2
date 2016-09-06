@@ -1,0 +1,75 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Feedback:
+  actAs:
+    Timestampable: ~
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+
+    is_answered:
+      type: boolean
+      default: false
+      notnull: true
+
+    email:
+      type: string(50)
+      notnull: true
+      email: true
+
+    name: string(100)
+    message: string
+
+Reservation:
+  actAs:
+    Timestampable: ~
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+
+    event_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+
+    is_answered:
+      type: boolean
+      default: false
+      notnull: true
+
+    email:
+      type: string(50)
+      notnull: true
+      unique: true
+      email: true
+
+    date:
+      type: date
+      notnull: true
+
+    name:
+      type: string(150)
+      notnull: true
+
+    phone:
+      type: string(150)
+      notnull: true
+
+  relations:
+    Event:
+      type: one
+      foreignType: many
+      foreignAlias: Reservations
+      onDelete: cascade

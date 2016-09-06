@@ -1,0 +1,8 @@
+all:
+  .array:
+    ru:
+      - { image: master_ru.jpg, link: 'http://www.mastercard.com/ru', status: 'test' }
+      - { image: sponsor_audi.jpg, link: 'http://www.audi.ru/', status: 'test' }
+    en:
+      - { image: master_en.jpg, link: 'http://www.mastercard.com/', status: 'test' }
+      - { image: sponsor_audi.jpg, link: 'http://www.audi.com/', status: 'test' }

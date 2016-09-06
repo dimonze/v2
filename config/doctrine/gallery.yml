@@ -1,0 +1,52 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Gallery:
+  actAs:
+    I18n:
+      fields: [title, author]
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    date:
+      type: date
+      notnull: true
+
+    title:
+      type: string(255)
+      notnull: true
+    author:
+      type: string(255)
+
+
+GalleryImage:
+  actAs:
+    I18n:
+      fields: [title, description]
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    gallery_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+    title: string(255)
+    description: string
+
+  relations:
+    Gallery:
+      type: one
+      foreignType: many
+      foreignAlias: Images
+      onDelete: cascade

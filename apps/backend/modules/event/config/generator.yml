@@ -1,0 +1,94 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Event
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          event
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        title:          { label: Название }
+        type:           { label: Тип }
+        gallery_id:     { label: Галерея }
+        date_start:     { label: Дата открытия, date_format: dd MMMM yyyy }
+        date_end:       { label: Дата закрытия, date_format: dd MMMM yyyy }
+        on_banner:      { label: На баннере }
+        #on_education_prog: { label: Показывать в разделе "Образовательная программа"}
+        on_prehistory:  { label: Показывать в разделе "Перформанс"}
+        text_on_banner: { label: Отображать заголовок на баннере }
+        ru:             { label: На русском }
+        en:             { label: На английском }
+
+        own_schedule:       { label: По расписанию Гаража }
+        schedule_monday:    { label: Понедельник }
+        schedule_tuesday:   { label: Вторник }
+        schedule_wednesday: { label: Среда }
+        schedule_thursday:  { label: Четверг }
+        schedule_friday:    { label: Пятница }
+        schedule_saturday:  { label: Суббота }
+        schedule_sunday:    { label: Воскресенье }
+
+        preview_image:  { label: Изображение превью }
+        additional_image:  { label: Изображение доп. блока }
+        images:         { label: Изображения }
+        banner_image_ru: { label: RU Изображение для баннера }
+        banner_image_en: { label: EN Изображение для баннера }
+
+        on_homepage:    { label: На главной }
+        published_at:   { label: Опубликовано, type: Boolean }
+
+      list:
+        title:          Управление событиями
+        display:        [=title, date_start, date_end, on_homepage, published_at]
+        sort:           [id, desc]
+        max_per_page:   20
+        table_method:   retrieveBackendObjectList
+
+      filter:
+        display:        [title, date_start, date_end, published_at]
+
+      form:
+        display:
+          "Характеристики":
+            - type
+            - gallery_id
+            - date_start
+            - date_end
+            - published_at
+          "Расписание":
+            - own_schedule
+            - schedule_monday
+            - schedule_tuesday
+            - schedule_wednesday
+            - schedule_thursday
+            - schedule_friday
+            - schedule_saturday
+            - schedule_sunday
+          "Описание":
+            - ru
+            - en
+          "Изображения":
+            - preview_image
+            - additional_image
+            - images
+            - on_banner
+            - text_on_banner
+            - banner_image_ru
+            - banner_image_en
+          "На главную":
+            - on_homepage
+          "Перформанс":
+            - on_prehistory
+
+
+      edit:
+        title:          Редактирование события "%%title%%"
+      new:
+        title:          Добавление события

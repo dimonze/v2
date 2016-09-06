@@ -1,0 +1,10 @@
+.DS_Store
+/nbproject
+/.idea
+/cache/*
+/data/*
+/log/*
+/lib/form/doctrine/base/*
+/lib/filter/doctrine/base/*
+/lib/model/doctrine/base/*
+/web/uploads/*

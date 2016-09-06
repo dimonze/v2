@@ -1,0 +1,4 @@
+artguide:
+  enabled:      true
+  lifetime:     1220
+  contextual:   true

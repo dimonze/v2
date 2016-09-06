@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Feedback
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          feedback
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      fields:
+        is_answered:  { label: Отвечено }
+        email:        { label: Email }
+        name:         { label: Имя }
+        message:      { label: Сообщение }
+        created_at:   { label: Получено }
+
+      list:
+        batch_actions: []
+        actions: []
+        # see template
+        object_actions: ~
+        title: Обратная связь
+        display: [email, name, created_at]
+        layout: stacked
+        params: |
+          <div style="color: gray">
+            От: "%%name%%" &lt;%%email%%&gt;
+            <em>%%created_at%%</em>
+          </div>
+          <blockquote><pre>%%message%%</pre></blockquote>
+
+
+      filter:
+        display: [is_answered, email]
+
+      form:    ~

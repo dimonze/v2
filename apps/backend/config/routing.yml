@@ -1,0 +1,114 @@
+note:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Note
+    module:               note
+    prefix_path:          /note
+    column:               id
+    with_wildcard_routes: true
+    
+video:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Video
+    module:               video
+    prefix_path:          /video
+    with_wildcard_routes: true
+
+book:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Book
+    module:               book
+    prefix_path:          /book
+    column:               id
+    with_wildcard_routes: true
+
+letter:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Letter
+    module:               letter
+    prefix_path:          /letter
+    column:               id
+    with_wildcard_routes: true
+
+reservation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Reservation
+    module:               reservation
+    prefix_path:          /reservation
+    column:               id
+    with_wildcard_routes: true
+
+user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                User
+    module:               user
+    prefix_path:          /user
+    column:               id
+    with_wildcard_routes: true
+
+feedback:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Feedback
+    module:               feedback
+    prefix_path:          /feedback
+    column:               id
+    with_wildcard_routes: true
+
+gallery_image:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                GalleryImage
+    module:               gallery_image
+    prefix_path:          /gallery_image
+    column:               id
+    with_wildcard_routes: true
+
+gallery:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Gallery
+    module:               gallery
+    prefix_path:          /gallery
+    column:               id
+    with_wildcard_routes: true
+
+page:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Page
+    module:               page
+    prefix_path:          /page
+    column:               id
+    with_wildcard_routes: true
+
+news:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                News
+    module:               news
+    prefix_path:          /news
+    column:               id
+    with_wildcard_routes: true
+
+homepage:
+  url:   /
+  param: { module: event, action: index }
+
+
+event:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Event
+    module:               event
+    prefix_path:          /event
+    column:               id
+    with_wildcard_routes: true
+
+default:
+  url:   /:module/:action

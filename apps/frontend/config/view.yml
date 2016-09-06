@@ -1,0 +1,36 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:
+    - "http://yandex.st/jquery/fancybox/2.0.5/jquery.fancybox.min.css"
+    - "global_styles.css"
+    - "custom-theme/jquery-ui-1.8.21.custom.css"
+    - "/reject/jquery.reject.css: { condition: lt IE 8 }"
+    - "styles.css"
+
+  javascripts:
+    - "http://yandex.st/jquery/1.7.1/jquery.min.js"
+    - "http://yandex.st/jquery/fancybox/2.0.5/jquery.fancybox.min.js"
+    - "http://maps.googleapis.com/maps/api/js?key=AIzaSyBz4fZob_2Quq5H9feB6HYwlGX52aqUrrQ&sensor=false"
+    - "jquery.placeholder.min.js"
+    - "jquery-ui-1.8.21.custom.min.js"
+    - "map.js"
+    - "jcarousel.min.js"
+    - "garrage.js"
+    - "html5forIE.js: { condition: lt IE 9 }"
+    - "/reject/jquery.reject.min.js: { condition: lt IE 8 }"
+    - "/reject/jquery.reject.css: { condition: lt IE 8 }"
+
+  has_layout:     true
+  layout:         layout

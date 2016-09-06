@@ -1,0 +1,27 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Note:
+  actAs:
+    Sortable: ~    
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true   
+    name:
+      type: string(255)
+      notnull: true
+    event_name:
+      type: string(255)
+      notnull: true
+    event_type:
+      type: string(255)
+      notnull: true
+    event_id:
+      type: integer(4)     

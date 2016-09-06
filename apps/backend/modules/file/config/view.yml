@@ -1,0 +1,5 @@
+uploadSuccess:
+  has_layout: false
+
+uploadError:
+  has_layout: false

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2008-12-24T18:32:11Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit>
+        <source>Garage Museum of Contemporary Art</source>
+        <target>Музей современного искусства «Гараж»</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Contact us</source>
+        <target>Контактная информация</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Feedback</source>
+        <target>Обратная связь</target>
+      </trans-unit>
+      <trans-unit>
+        <source>GORKY PARK</source>
+        <target>Парк Горького</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Search</source>
+        <target>Поиск по сайту</target>
+      </trans-unit>
+      <trans-unit>
+        <source>News</source>
+        <target>Новости</target>
+      </trans-unit>
+      <trans-unit>
+        <source>MORE NEWS</source>
+        <target>ВСЕ НОВОСТИ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>HOURS AND TICKETS</source>
+        <target>Время работы и билеты</target>
+      </trans-unit>
+      <trans-unit>
+        <source>READ MORE ABOUT GARAGE</source>
+        <target>Подробнее о «Гараже»</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ADMISSION</source>
+        <target>КАК НАС НАЙТИ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ALL EVENTS</source>
+        <target>Все События</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Russian Performance: a cartography of its history</source>
+        <target>Перформанс в России: картография истории</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Exhibitions</source>
+        <target>Выставки</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Exhibition ticket information:</source>
+        <target>Стоимость билетов на выставки вы можете уточнить по телефону:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Education</source>
+        <target>Образование</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Informational partner</source>
+        <target>Информационный партнер</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Kids</source>
+        <target>Дети</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Galleries</source>
+        <target>Фотогалереи</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Gallery</source>
+        <target>Фотогалерея</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ON VIEW</source>
+        <target>Сейчас в «Гараже»</target>
+      </trans-unit>
+      <trans-unit>
+        <source>GARAGE RECOMMENDS</source>
+        <target>«Гараж» рекомендует</target>
+      </trans-unit>
+      <trans-unit>
+        <source>CATEGORIES AND PRICES</source>
+        <target>КАТЕГОРИИ И ЦЕНЫ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>VISIT</source>
+        <target>Посетителям</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Current</source>
+        <target>Сейчас</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Past</source>
+        <target>Было</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Archive</source>
+        <target>Архив</target>
+      </trans-unit>
+      <trans-unit>
+        <source>External Projects</source>
+        <target>Внешние проекты</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Garage Project Space</source>
+        <target>Garage Project Space</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Lectures</source>
+        <target>Лекции</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Workshops</source>
+        <target>Курсы</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Films</source>
+        <target>Кино</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Music</source>
+        <target>Музыка</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Books</source>
+        <target>Книги</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Book</source>
+        <target>Книга</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Other Books</source>
+        <target>Другие книги</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publication date</source>
+        <target>Дата издания</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Bookstore contacts</source>
+        <target>Контакты книжного магазина</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Bookstore working time</source>
+        <target>Время работы книжного магазина</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Price</source>
+        <target>Стоимость</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About the book</source>
+        <target>О книге</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About the author</source>
+        <target>Об авторе</target>
+      </trans-unit>
+      <trans-unit>
+        <source>About the publisher</source>
+        <target>Об издательстве</target>
+      </trans-unit>
+      <trans-unit>
+        <source>ABOUT</source>
+        <target>О «ГАРАЖЕ»</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Author</source>
+        <target>Автор</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Year</source>
+        <target>Год</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Publishing</source>
+        <target>Издательство</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Events</source>
+        <target>События</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Research</source>
+        <target>Научная деятельность</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Library</source>
+        <target>Библиотека</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Research Projects</source>
+        <target>Исследования</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Performance</source>
+        <target>Перформанс</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Platform</source>
+        <target>Платформа</target>
+      </trans-unit>
+      <trans-unit>
+        <source>EDUCATION</source>
+        <target>Образовательная программа</target>
+      </trans-unit>
+      <trans-unit>
+        <source>%link% production</source>
+        <target>Изобретено в %link%</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Required</source>
+        <target>Обязательно для заполнения</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Invalid</source>
+        <target>Некорректное значение</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Duplicate value</source>
+        <target>Уже существует</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Sign out</source>
+        <target>Выйти</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Enter email/login</source>
+        <target>Введите Ваш е-mail / Ваш логин</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Enter your password</source>
+        <target>Введите Ваш пароль</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sign in</source>
+        <target>Войти</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Forgot password?</source>
+        <target>Забыли пароль?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Send instructions</source>
+        <target>Выслать инструкцию</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Password recovery</source>
+        <target>В��сстановление пароля</target>
+      </trans-unit>
+
+
+      <trans-unit>
+        <source>garageccc.com password recovery</source>
+        <target>Восстановление пароля на сайте garageccc.com</target>
+      </trans-unit>
+      <trans-unit>
+        <source>To recover your password, click here %s</source>
+        <target>Для восстановления пароля пройдите по ссылке %s</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Instructions has been emailed</source>
+        <target>Письмо с инструкцией по восстановлению было отправлено на почту</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Invalid token. Please, request recovery link again.</source>
+        <target>Некорректный код восстановления. Пожалуйста, запросите ссылку для восстанволения повторно.</target>
+      </trans-unit>
+
+
+
+      <trans-unit>
+        <source>Select date</source>
+        <target>Выбрать дату</target>
+      </trans-unit>
+      <trans-unit>
+        <source>from</source>
+        <target>с</target>
+      </trans-unit>
+      <trans-unit>
+        <source>to</source>
+        <target>по</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Select</source>
+        <target>Выбрать</target>
+      </trans-unit>
+
+	  <trans-unit>
+        <source>Jump to</source>
+        <target>Перейти</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Show</source>
+        <target>Показать</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Find</source>
+        <target>Найти</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Search results</source>
+        <target>Результаты поиска</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Found results</source>
+        <target>Найдено результатов</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Nothing found</source>
+        <target>Результатов не найдено</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>of</source>
+        <target>из</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Date</source>
+        <target>дата</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Schedule</source>
+        <target>Расписание</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Monday</source>
+        <target>Понедельник</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Tuesday</source>
+        <target>Вторник</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Wednesday</source>
+        <target>Среда</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Thursday</source>
+        <target>Четверг</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Friday</source>
+        <target>Пятница</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Saturday</source>
+        <target>Суббота</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Sunday</source>
+        <target>Воскресенье</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Full text</source>
+        <target>Полный текст</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>All</source>
+        <target>Все</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>According to the Garage schedule</source>
+        <target>По расписанию Гаража</target>
+      </trans-unit>
+
+
+      <trans-unit>
+        <source>GARAGE MUSEUM OF CONTEMPORARY ART PRESENTS</source>
+        <target>МУЗЕЙ СОВРЕМЕННОГО ИСКУСCТВА «ГАРАЖ» ПРЕДСТАВЛЯЕТ</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Tickets are available at the ticket desk of Garage Pavilion in Gorky Park.</source>
+        <target>Билеты можно приобрести в кассе павильона Гараж в парке Горького.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>All lectures, concerts and open workshops for kids are free.</source>
+        <target>Все лекции и концерты, а также открытые мастерские для детей являются бесплатными, если не указано иное</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Garage Museum of Contemporary Art is the place for people, art and ideas to create history.</source>
+        <target>Музей современного искусства «Гараж» – место, где встречаются люди, идеи и искусство, чтобы создавать историю.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Admission fee</source>
+        <target>Стоимость</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Buy online</source>
+        <target>Купить билет online</target>
+      </trans-unit>
+      <trans-unit>
+        <source>RUR</source>
+        <target>руб.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Buy tickets</source>
+        <target>Забронировать билет</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Venue</source>
+        <target>Место проведения</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Phone</source>
+        <target>Телефон для справок</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Hours</source>
+        <target>Время работы</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Hours</source>
+        <target>Время работы</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Opening hours are subject to change due to special events.</source>
+        <target>В дни проведения специальных мероприятий время работы Центра может изменяться.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>on view</source>
+        <target>сегодня в гараже</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>exhibition</source>
+        <target>выставка</target>
+      </trans-unit>
+      <trans-unit>
+        <source>event</source>
+        <target>событие</target>
+      </trans-unit>
+      <trans-unit>
+        <source>project</source>
+        <target>внешний проект</target>
+      </trans-unit>
+      <trans-unit>
+        <source>project space</source>
+        <target>project space</target>
+      </trans-unit>
+      <trans-unit>
+        <source>lecture</source>
+        <target>лекция</target>
+      </trans-unit>
+      <trans-unit>
+        <source>course</source>
+        <target>курс</target>
+      </trans-unit>
+      <trans-unit>
+        <source>publishing</source>
+        <target>книги</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>children</source>
+        <target>детям</target>
+      </trans-unit>
+      <trans-unit>
+        <source>education</source>
+        <target>образование</target>
+      </trans-unit>
+      <trans-unit>
+        <source>gallery</source>
+        <target>фотогалерея</target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>Did you know that your Internet Browser is out of date?</source>
+        <target>Знаете ли вы что ваш интернет-браузер устарел?</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Your browser is out of date, and may not be compatible with our website. A list of the most popular web browsers can be found below.</source>
+        <target>Ваш браузер устарел и несовместим с нашим сайтом. Список современных и популярных браузеров ниже.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>By closing this window you acknowledge that your experience on this website may be degraded</source>
+        <target>Закрывая это окно вы соглашаетесь с тем что сайт может работать некорректно.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Close This Window</source>
+        <target>Закрыть предупреждение</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Garage is located at Pioneer Pond in Gorky Park.</source>
+        <target>Музей современного искусства «Гараж» находится в Парке Горького у Пионерского пруда.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>9, Krymsky Val, Moscow, 119049</source>
+        <target>119049, г. Москва, ул. Крымский Вал, д. 9</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Ticket office closes 30 minutes before Museum closing time.</source>
+        <target>Кассы закрываются за 30 минут до закрытия Музея.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>tel</source>
+        <target>Тел</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Phone:</source>
+        <target>Тел.:</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Reservation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          reservation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_answered:  { label: Отвечено }
+        email:        { label: Email }
+        name:         { label: Имя }
+        created_at:   { label: Получено }
+
+      list:
+        batch_actions: []
+        actions: []
+        table_method:   retrieveBackendObjectList
+        # see template
+        object_actions: ~
+        title: Бронирование
+        display: [email, name, created_at]
+        layout: stacked
+        params: |
+          <div style="color: gray">
+            От: "%%name%%" &lt;%%email%%&gt;
+            <em>%%created_at%%</em>
+          </div>
+          Телефон: %%phone%%<br>
+          Событие: "%%Event%%"
+
+
+      filter:
+        display: [is_answered, date, email, phone]
+
+      form:    ~
+      edit:    ~
+      new:     ~

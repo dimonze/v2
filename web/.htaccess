@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteBase /
+
+#http://garageccc.com/ru/page/performance --> http://garageccc.com/ru/event/category/type/41/date/now
+RewriteCond %{REQUEST_URI} ^(.*)/ru/page/performance
+RewriteRule (.*) http://garageccc.com/ru/event/category/type/41/date/now [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]

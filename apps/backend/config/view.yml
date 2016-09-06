@@ -1,0 +1,23 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Garage backend
+
+  stylesheets:
+    - /js/fancybox/source/jquery.fancybox.css?v=2.0.6
+    - http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css
+    - backend.css
+
+  javascripts:
+    - http://yandex.st/jquery/1.7.1/jquery.min.js
+    - /js/fancybox/source/jquery.fancybox.pack.js?v=2.0.6
+    - ajaxupload.js
+    - http://code.jquery.com/ui/1.10.4/jquery-ui.js
+
+  has_layout:     true
+  layout:         layout

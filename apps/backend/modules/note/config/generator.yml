@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Note
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          note
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    
+    config:
+        actions: ~
+        fields:
+          name:           { label: Заметки }
+          event_name:     { label: События }
+          event_type:     { label: Тип }
+          event_id:       { label: ID События }
+          position:       { label: Позиция }
+          
+        list:
+          title:          Управление Заметками
+          display:        [=id, name, event_name, event_id, position]
+          sort:           [position]
+          max_per_page:   20          
+        edit:
+          title:          Редактирование заметки"
+        new:
+          title:          Добавление заметки
+    
+        

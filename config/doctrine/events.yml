@@ -1,0 +1,141 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Event:
+  actAs:
+    I18n:
+      fields: [title, short, description, additional, special, place_address, place_phone, place_open_hours, city, price, html_code]
+
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    type:
+      type: integer(1)
+      unsigned: true
+      notnull: true
+
+    own_schedule:
+      type: boolean
+      notnull: true
+      default: 0
+
+    schedule_monday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    schedule_tuesday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    schedule_wednesday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    schedule_thursday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    schedule_friday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    schedule_saturday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    schedule_sunday:
+      type: string(255)
+      notnull: true
+      default: '--'
+
+    date_start: date
+    date_end: date
+
+    on_banner:
+      type: boolean
+      notnull: true
+      default: false
+
+    text_on_banner:
+      type: boolean
+      notnull: true
+      default: true
+
+    on_prehistory:
+      type: boolean
+      notnull: true
+
+    on_education_prog:
+      type: boolean
+      notnull: true
+
+    gallery_id:
+      type: integer(4)
+      unsigned: true
+
+    title:
+      type: string(255)
+      notnull: true
+    short: string(255)
+    description: string
+    additional: string
+    special: string
+    html_code: clob(1024)
+
+    price: string(255)
+    place_address: string
+    place_phone: string(150)
+    place_open_hours: string(150)
+
+    city: string(50)
+    coords: array
+    on_homepage:
+      type: boolean
+      default: false
+      notnull: true
+
+    published_at: timestamp
+
+  indexes:
+    dates:
+      fields: [date_start, date_end]
+    published:
+      fields: [published_at]
+
+  relations:
+    Gallery:
+      type: one
+      foreignType: one
+      onDelete: set null
+
+
+EventImage:
+  columns:
+    id:
+      type: integer(4)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    event_id:
+      type: integer(4)
+      unsigned: true
+      notnull: true
+
+  relations:
+    Event:
+      type: one
+      foreignType: many
+      foreignAlias: Images
+      onDelete: cascade

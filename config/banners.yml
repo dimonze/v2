@@ -1,0 +1,11 @@
+all:
+  .array:
+    ru:
+      - { title: 'Книжный магазин ГАРАЖ', text: Интернет-магазин, link: 'http://www.ozon.ru/', file: news_28.jpg, code: '<a href="http://www.ozon.ru/"><img alt="" src="/images/pics/news_28.jpg"></a>' }
+      - { title: 'Открылось кафе ГАРАЖ', text: 'Меню кафе', link: 'http://www.afisha.ru/', file: news_30.jpg, code: '<a href="http://www.afisha.ru/"><img alt="" src="/images/pics/news_30.jpg"></a>' }
+      - { title: 'Архив выставок ГАРАЖ', text: Смотреть, link: 'http://archive.garageccc.com', file: news_32.jpg, code: '<a href="http://archive.garageccc.com"><img alt="" src="/images/pics/news_32.jpg"></a>' }
+      - { title: 'Новости АртГид', text: 'Смотреть ленту', link: /ru/news/artguide, file: news_34.jpg, code: '<a href="/ru/news/artguide"><img alt="" src="/images/pics/news_34.jpg"></a>' }
+    en:
+      - { title: 'Artguide News', text: View, link: /en/news/artguide, file: 31bf280d45a184e23bb62c3d74bbdfa1e354ec7c.jpg, code: '<a href="/en/news/artguide"><img src="/uploads/promos/31bf280d45a184e23bb62c3d74bbdfa1e354ec7c.jpg" alt="Artguide News"/></a>' }
+      - { title: 'Cafe GARAGE opening', text: 'View Menu', link: 'http://www.yandex.ru', file: d663adc54558e7686af7112007b35aea03554289.swf, code: '<embed width="220" height="150" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" src="/uploads/promos/d663adc54558e7686af7112007b35aea03554289.swf" FlashVars="link=http://www.yandex.ru"></embed>' }
+      - { title: 'Exhibitbions Archive', text: 'Look at this!', link: 'http://archive.garageccc.com', file: cfd6e8f7f912c955a311a91acee71d6c9533d30b.jpg, code: '<a href="http://archive.garageccc.com"><img src="/uploads/promos/cfd6e8f7f912c955a311a91acee71d6c9533d30b.jpg" alt="Exhibitbions Archive"/></a>' }

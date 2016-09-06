@@ -1,0 +1,28 @@
+options:
+  type: InnoDB
+  collate: utf8_general_ci
+  charset: utf8
+detect_relations: false
+
+Letter:
+  actAs:
+    Timestampable: ~
+
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    subject:
+      type: string(255)
+      notnull: true
+    body:
+      type: clob(65532)
+    events:
+      type: array
+    lang:
+      type: string(2)
+      fixed: true
+      notnull: true
+      default: ru

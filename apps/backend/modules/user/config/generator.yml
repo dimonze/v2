@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           User
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          user
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        fio:            { label: ФИО }
+        email:          { label: E-mail }
+        group:          { label: Группа }
+        group_title:    { label: Группа }
+        created_at:     { label: Дата создания }
+
+      list:
+        title:          Управление пользователями
+        display:        [=email, =fio, group_title]
+        max_per_page:   30
+        sort:           [created_at, desc]
+        batch_actions:  {}
+
+      filter:
+        display:        [email, fio, group]
+      form:
+        display:        [email, fio, group, created_at]
+        fields:
+          email:        { attributes: { style: 'width: 200px;' } }
+          fio:          { attributes: { style: 'width: 350px;' } }
+
+      edit:
+        title:          Редактирование пользователя "%%fio%%"
+      new:
+        title:          Регистрация пользователя
